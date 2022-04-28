@@ -1,0 +1,23 @@
+@import "_vars.scss";
+
+.head {
+    max-width: $container;
+    margin: auto;
+    height: 100px;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu {
+            color: #484C63;
+            display: flex;
+            align-items: center;
+            .menu_item {
+                display:flex;   
+                font-size: 14px;
+                line-height: 14px;
+                padding: 0px 7.5px;
+            }
+        }
+    }
+}
