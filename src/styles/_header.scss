@@ -8,16 +8,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 24px 0px;
         .menu {
-            color: #484C63;
             display: flex;
             align-items: center;
+
             .menu_item {
                 display:flex;   
-                font-size: 14px;
-                line-height: 14px;
-                padding: 0px 7.5px;
+                color: $grey;
+                margin-left: 60px;
+                .menu_item-link {
+                    text-decoration: none;
+                    // &:hover {
+                    //     color: $lightRed;
+                    //     transition: 0.3s all ease;
+                    // }
+                }
             }
+        }
+        .burger {
+            display: none;
         }
     }
 }

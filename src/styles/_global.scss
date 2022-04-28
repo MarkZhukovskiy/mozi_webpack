@@ -1,0 +1,18 @@
+body {
+    background: $backgraund;
+    font-family: "EuropeNormal";
+    height: 100%;
+    overflow: hidden;
+}
+
+.btn {
+    background: $red;
+    padding: 14px 32px;
+    color: #fff;
+    border-radius: 6px;
+    &:hover {
+        color: black;
+        background-color: $lightRed;
+        transition: 0.3s all ease;
+    }
+}

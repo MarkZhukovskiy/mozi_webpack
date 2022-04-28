@@ -1,0 +1,51 @@
+.body {
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+
+.head {
+  max-width: 1008px;
+  margin: auto;
+  height: 100px;
+}
+
+.head .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head .navbar .menu {
+  color: #484C63;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head .navbar .menu .menu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0px 7.5px;
+}
+
+.body {
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+
+body {
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+  font-family: "EuropeNormal";
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
