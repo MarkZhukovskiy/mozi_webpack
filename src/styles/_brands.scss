@@ -1,0 +1,38 @@
+@import "_vars.scss";
+
+.section_brands {
+    padding: 90px 0 130px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caontainer {
+    
+}
+
+._section_title {
+    padding: 45px;
+    font-size: 36px;
+    line-height: 57px;
+    color: #1A2578;
+    display: flex;
+    justify-content: center;
+    word-spacing: 4px;
+    > span {
+        color: $red;
+        padding: 0px 7px;
+    }
+}
+
+.brands {
+    display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.brands_item {
+    display: flex;
+    align-items: center;
+
+}
