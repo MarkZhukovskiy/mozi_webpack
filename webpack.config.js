@@ -13,10 +13,11 @@ module.exports = {
     },
     output: {
         filename: './index.min.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        // assetModuleFilename: 'images/[name][ext]'
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js']
+        extensions: ['.tsx', '.ts', '.js'],
     },
     module: {
         rules: [{
@@ -28,11 +29,16 @@ module.exports = {
         {
             test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
             type: 'asset/resource',
+
         },
         // шрифты и SVG
         {
             test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
             type: 'asset/inline',
+            // options: {
+            //     name: 'img/[name].[ext]',
+            //   },
+
         },
         {
             test: /\.(scss|css)$/,

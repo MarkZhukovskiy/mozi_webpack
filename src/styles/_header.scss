@@ -12,7 +12,9 @@
         .menu {
             display: flex;
             align-items: center;
-
+            @media (max-width: $breakpoint480) {
+                display: none;
+            }
             .menu_item {
                 display:flex;   
                 color: $grey;

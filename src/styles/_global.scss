@@ -1,8 +1,14 @@
 body {
+    height: 100%;
     background: $backgraund;
     font-family: "EuropeNormal";
     height: 100%;
-    overflow: hidden;
+}
+
+.main_body {
+    background: $backgraund;
+    max-width: $container;
+    margin: 0 auto;
 }
 
 .btn {
@@ -10,9 +16,29 @@ body {
     padding: 14px 32px;
     color: #fff;
     border-radius: 6px;
+    text-decoration: none;
     &:hover {
-        color: black;
+        color: white;
         background-color: $lightRed;
         transition: 0.3s all ease;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 8px 21px;
+    }
+}
+
+.btn_outline{
+    text-decoration: none;
+    border: 1px solid $red;
+    padding: 14px 32px;
+    border-radius: 6px;
+    color: $red;
+    &:hover {
+        color: white;
+        background: $lightRed;
+        transition: 0.3s all ease;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 8px 21px;
     }
 }

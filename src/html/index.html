@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    @@include('chunks/header.html')
-    @@include('chunks/build.html')
+<body class="main_body">
+
+    <div class="hero_wrapper">
+        <!-- header -->
+        @@include('chunks/header.html')
+        <!-- <img src="images/hero_main.svg" alt=""> -->
+        <!-- hero -->
+        @@include('main_page/hero.html')
+    </div>
+
 
     <!-- @@include('chunks/footer.html') -->
     <script src="index.min.js"></script>
