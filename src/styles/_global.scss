@@ -1,12 +1,11 @@
+@import "_vars.scss";
+
 body {
-    height: 100%;
-    background: $backgraund;
-    font-family: "EuropeNormal";
-    height: 100%;
+    background: white;
 }
 
 .main_body {
-    background: $backgraund;
+    // background: $backgraund;
     max-width: $container;
     margin: 0 auto;
 }
@@ -37,6 +36,7 @@ body {
         color: white;
         background: $lightRed;
         transition: 0.3s all ease;
+        cursor: pointer;
     }
     @media (max-width: $breakpoint768) {
         padding: 8px 21px;

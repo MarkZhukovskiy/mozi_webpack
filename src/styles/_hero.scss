@@ -1,15 +1,11 @@
 @import "_vars.scss";
 
-// .hero_wrapper {
-
-// }
-
 .section_hero{
-    padding-top: 130px;
-    padding-bottom: 230px;
+    padding: 130px 0px 230px 0px;
     position: relative;
     @media (max-width: $breakpoint992) {
         padding: 100px 0px;
+        
     }
     @media (max-width: $breakpoint480) {
         padding: 10px 0px;
@@ -20,7 +16,7 @@
         bottom: 0;
         right: -20%;
         @media (max-width: $breakpoint992) {
-            max-width: 710px;
+            max-width: 650px;
             bottom: 55px;
         }
         @media (max-width: $breakpoint768) {
