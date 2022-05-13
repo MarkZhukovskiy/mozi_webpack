@@ -1,20 +1,20 @@
 @import "_vars.scss";
 
 .section_hero{
+    background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
     padding: 130px 0px 230px 0px;
     position: relative;
     @media (max-width: $breakpoint992) {
         padding: 100px 0px;
-        
     }
     @media (max-width: $breakpoint480) {
-        padding: 10px 0px;
+        padding: 0px;
     }
     img {
         content:url("../images/hero_main.svg");
         position: absolute;
         bottom: 0;
-        right: -20%;
+        right: 0;
         @media (max-width: $breakpoint992) {
             max-width: 650px;
             bottom: 55px;
@@ -27,25 +27,57 @@
             display: none;
         }
     }
+
+    &.section_hero-products {
+        padding-top: 170px;
+        padding-bottom: 150px;
+        position: relative;
+        @media (max-width: $breakpoint992) {
+            padding: 50px 0px 215px 0px;
+        }
+        img {
+            content:url("../images/hero_products.svg");
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            @media (max-width: $breakpoint1400) {
+                max-width: 400px;
+            }
+            @media (max-width: $breakpoint992) {
+                max-width: 320px;
+                right: 50px;
+            }
+            @media (max-width: $breakpoint768) {
+                max-width: 320px;
+                bottom: 0;
+            }
+            @media (max-width: $breakpoint480) {
+                max-width: 150px;
+                bottom: 0;
+                left: 28%;
+            }
+        }
+    }
 }
+
 
 .hero {
     display: flex;
     @media (max-width: $breakpoint480) {
-        // display: flex;
-        // justify-content: center;
-        // text-align: center;
-        // z-index: 2;
-        // text-align: justify;
+        justify-content: center;
     }
 }
+
 .hero_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 0 1 50%;
     @media (max-width: $breakpoint480) {
-        text-align: center;
-
+        justify-content: center;
     }
 }
+
 .hero_item-title {
     font-weight: 700;
     font-size: 48px;
@@ -59,13 +91,22 @@
         font-size: 33px;
         line-height: 42px;
     }
+    @media (max-width: $breakpoint480) {
+        font-size: 23px;
+        line-height: 32px;    }
 }
 .hero_item-text {
+    font-weight: 400;
     font-size: 22px;
     line-height: 33px;
     color: $grey;
     @media (max-width: $breakpoint992) {
         font-size: 18px;
+        line-height: 28px;
+    }
+    @media (max-width: $breakpoint480) {
+        font-size: 14px;
+        line-height: 10x;
     }
 }
 .hero_item-buttons {
@@ -83,14 +124,8 @@
     }
 }
 
-// .btn {
-// }
-
 .hero_btn {
     @media (max-width: $breakpoint768) {
         padding: 10px 26px;
     }
 }
-
-// // .btn_outline {
-// // }

@@ -27,9 +27,8 @@ module.exports = {
         },
         // изображения
         {
-            test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+            test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
-
         },
         // шрифты и SVG
         {

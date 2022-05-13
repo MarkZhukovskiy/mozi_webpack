@@ -1,0 +1,45 @@
+@import "_vars.scss";
+
+.section {
+    // .section_build
+    &_build {
+        position: relative;
+        img {
+            content: url(../images/img_build.png);
+            position: absolute;
+            bottom: 70px;
+            right: 90px;
+        }
+        padding-bottom: 100px;
+    }
+}
+
+.build {
+    // .build_item
+    &_item {
+    }
+    // .build_title
+    &_title {
+        padding-top: 217px;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 57px;
+        text-align: start;
+        color: $blue;
+    }
+    // .build_subtitle
+    &_subtitle {
+        font-size: 16px;
+        line-height: 27px;
+        color: $grey;
+        margin-bottom: 30px;
+    }
+
+}
+
+.btn {
+    // .btn_build
+    &_build {
+        max-width: 104px;
+    }
+}
