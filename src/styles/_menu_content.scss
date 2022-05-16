@@ -1,0 +1,227 @@
+@import "_vars.scss";
+@import "_global.scss";
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    // background-color: rgb(150, 51, 150);
+    background: linear-gradient(134deg, #ff4091 -25%, #4939de 35%, #fd60ff 135%);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px;
+}
+.top_content_anim {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 163.5px;
+    height: 32px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+
+.left_contant_container {
+    position: absolute;
+    bottom: 64px;
+    left: 16px;
+}
+.left_content_rec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.left_content_screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.right_content_container {
+    position: absolute;
+    bottom: 64px;
+    right: 16px;
+}
+
+.right_content_plus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.right_content_minus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.bottom_content_container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 16px;
+}
+.bottom_content_labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.bottom_content_layers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 121px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.bottom_content_draw {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.top_content_anim_container {
+    display: flex;
+  .top_content_anim_wraper {
+    flex:1;
+    &:last-child {
+
+    }
+  }
+}
+/* Accordion styles */
+.anim_content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+// Layout
+.top_content_table_container {
+    display: flex;
+  .top_content_table_wraper {
+    flex:1;
+    &:last-child {
+        color: $blue;
+    }
+  }
+}
+/* Accordion styles */
+.table_content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tab {
+  width: 180px;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: white;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background-color: white;
+    }
+    &::after {
+      content: "\22C3";
+      width: 1em;
+      height: 1em;
+      padding-left: 4px;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0px 20px;
+    color: black;
+    background: white;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: wheat;
+    cursor: pointer;
+    &:hover {
+      background: white;
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background-color: white;
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
