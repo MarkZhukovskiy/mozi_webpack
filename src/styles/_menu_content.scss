@@ -15,28 +15,12 @@ body {
     padding: 0;
 }
 
-.menu_content {
-    display: flex;
-    flex-direction: column;
-}
-
 
 .top_content {
     display: flex;
     justify-content: space-between;
     margin: 16px 16px;
 }
-.top_content_anim {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 163.5px;
-    height: 32px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-
 
 .left_contant_container {
     position: absolute;
@@ -138,7 +122,7 @@ input {
 }
 
 .top_content_anim_container {
-    display: flex;
+
   .top_content_anim_wraper {
     flex:1;
     &:last-child {
@@ -154,7 +138,7 @@ input {
 
 // Layout
 .top_content_table_container {
-    display: flex;
+
   .top_content_table_wraper {
     flex:1;
     &:last-child {
@@ -167,6 +151,11 @@ input {
   border-radius: 8px;
   overflow: hidden;
 }
+
+.tab_1 {
+  width: 170px;
+}
+
 .tab {
   width: 180px;
   color: rgb(0, 0, 0);
